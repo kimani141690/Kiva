@@ -98,7 +98,7 @@ def transform_new_data():
 def main():
     print("[Transform] Start")
     print("[Transform] Remove any old data from ppr_raw_all table")
-    ____
+    truncate_table()
     print("[Transform] Transform new data available in ppr_raw_all table")
-    ____
+    transform_new_data()
     print("[Transform] End")
