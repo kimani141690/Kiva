@@ -23,29 +23,11 @@ def transform_case(input_string):
     """
     return input_string.lower()
 
-
-def update_date_of_sale(date_input):
+def update_string (input_string):
     """
-    Update date format from DD/MM/YYYY to YYYY-MM-DD
+    Something SOmething Something
     """
-    current_format = datetime.strptime(date_input, "%d/%m/%Y")
-    new_format = current_format.strftime("%Y-%m-%d")
-    return new_format
-
-
-def update_description(description_input):
-    """
-    Simplify the description field for potentialy future analysis, just return:
-    - "new" if string contains "new" substring
-    - "second-hand" if string contains "second-hand" substring
-    """
-    description_input = transform_case(description_input)
-    if "new" in description_input:
-        return "new"
-    elif "second-hand" in description_input:
-        return "second-hand"
-    return description_input
-
+    return input_string.ceil()
 
 def update_price(price_input):
     """
